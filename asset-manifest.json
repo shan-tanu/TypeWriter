@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/TypeWriter/static/css/main.2cf9af30.chunk.css",
+    "main.js": "/TypeWriter/static/js/main.88fbfe0c.chunk.js",
+    "main.js.map": "/TypeWriter/static/js/main.88fbfe0c.chunk.js.map",
+    "runtime-main.js": "/TypeWriter/static/js/runtime-main.4a76f67f.js",
+    "runtime-main.js.map": "/TypeWriter/static/js/runtime-main.4a76f67f.js.map",
+    "static/js/2.9ebe86c9.chunk.js": "/TypeWriter/static/js/2.9ebe86c9.chunk.js",
+    "static/js/2.9ebe86c9.chunk.js.map": "/TypeWriter/static/js/2.9ebe86c9.chunk.js.map",
+    "index.html": "/TypeWriter/index.html",
+    "static/css/main.2cf9af30.chunk.css.map": "/TypeWriter/static/css/main.2cf9af30.chunk.css.map",
+    "static/js/2.9ebe86c9.chunk.js.LICENSE.txt": "/TypeWriter/static/js/2.9ebe86c9.chunk.js.LICENSE.txt",
+    "static/media/hero.96e141d3.png": "/TypeWriter/static/media/hero.96e141d3.png",
+    "static/media/logo.904ac8fd.png": "/TypeWriter/static/media/logo.904ac8fd.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4a76f67f.js",
+    "static/js/2.9ebe86c9.chunk.js",
+    "static/css/main.2cf9af30.chunk.css",
+    "static/js/main.88fbfe0c.chunk.js"
+  ]
+}
