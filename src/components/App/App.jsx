@@ -4,6 +4,7 @@ import Footer from '../Footer/Footer';
 import Landing from '../Landing/Landing';
 import Nav from '../Nav/Nav';
 import './App.css';
+import { SAMPLE_PARAGRAPHS } from '../../data/sampleParagraphs';
 
 const TotalTime = 60;
 const apiURL = 'http://metaphorpsum.com/paragraphs/1/8';
@@ -19,6 +20,26 @@ const defaultState = {
 
 class App extends React.Component {
     state = defaultState;
+
+    fetchNewParaFallback = () => {
+        const data =
+            SAMPLE_PARAGRAPHS[
+                Math.floor(Math.random() * SAMPLE_PARAGRAPHS.length)
+            ];
+        const selectedParagraphArr = data.split('');
+        const testInfo = selectedParagraphArr.map((selectedLetter) => {
+            return {
+                testLetter: selectedLetter,
+                status: 'notAttempted',
+            };
+        });
+
+        this.setState({
+            ...defaultState,
+            testInfo: testInfo,
+            selectedParagraph: data,
+        });
+    };
 
     fetchNewPara = () => {
         fetch(apiURL)
@@ -41,7 +62,7 @@ class App extends React.Component {
     };
 
     componentDidMount() {
-        this.fetchNewPara();
+        this.fetchNewParaFallback();
     }
 
     handleUserInput = (inputValue) => {
@@ -107,7 +128,7 @@ class App extends React.Component {
         }, 1000);
     };
 
-    startAgain = () => this.fetchNewPara();
+    startAgain = () => this.fetchNewParaFallback();
 
     render() {
         //console.log(this.state.testInfo);
