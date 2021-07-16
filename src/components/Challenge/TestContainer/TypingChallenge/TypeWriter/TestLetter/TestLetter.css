@@ -1,0 +1,19 @@
+.test-letter {
+    padding: 0;
+    margin: 0;
+    color: black;
+    font-size: 19px;
+    line-height: 19px;
+}
+
+.notAttempted {
+    color: #c0821f;
+}
+
+.correct {
+    color: #a7e979;
+}
+
+.incorrect {
+    color: #d13a0c;
+}

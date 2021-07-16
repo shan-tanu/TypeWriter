@@ -1,0 +1,41 @@
+.landing-container {
+    display: flex;
+    min-height: 90vh;
+    justify-content: space-between;
+    align-items: center;
+    color: #eee2ee;
+    padding: 0 32px;
+    font-family: 'Bangers', cursive;
+    margin: 0 20px;
+    flex-wrap: wrap;
+}
+
+.landing-header {
+    font-size: 82px;
+    letter-spacing: 4px;
+    margin: 0;
+}
+
+.typewriter-container {
+    font-size: 64px;
+}
+
+.typewriter-image {
+    width: 60vh;
+}
+
+@media (max-width: 800px) {
+    .landing-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .typewriter-image {
+        width: 80vh;
+    }
+
+    .landing-header {
+        margin-top: 32px;
+        text-align: center;
+    }
+}

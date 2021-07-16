@@ -1,0 +1,40 @@
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    align-items: center;
+    background: #1d2020;
+    margin: 0;
+    box-shadow: 0px 5px 3px rgba(231, 74, 74, 0.25);
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right {
+    margin-right: 40px;
+}
+
+.portfolio-link {
+    text-transform: capitalize;
+    font-size: 28px;
+    color: #f1f1f1;
+    font-weight: 800;
+}
+
+.logo {
+    margin-left: 20px;
+    height: 40px;
+}
+
+.logo-text {
+    font-family: 'Bangers', cursive;
+    font-size: 50px;
+    letter-spacing: 1px;
+    margin: 0 10px;
+    color: #e7e6e7;
+}
